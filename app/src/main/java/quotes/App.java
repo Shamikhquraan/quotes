@@ -27,7 +27,7 @@ public class App {
 try{
         URL obj = new URL(GET_URL);
         HttpURLConnection con = (HttpURLConnection) obj.openConnection();
-        // set the connection time out :
+        // set the connection time out: :
         con.setConnectTimeout(5000);
         con.setReadTimeout(5000);
         // set a GET request :
