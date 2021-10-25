@@ -1,9 +1,14 @@
 package quotes;
+
+
 public class Quotes {
     private String author;
     private String text;
-//that what im said like tamplte :
-    //there is a get and set for author ,
+    public Quotes(String author,String text){
+        this.author=author;
+        this.text=text;
+    }
+
     public String getAuthor() {
         return author;
     }
@@ -19,12 +24,11 @@ public class Quotes {
     public void setText(String text) {
         this.text = text;
     }
+
     @Override
     public String toString() {
-        //here the qoute after u get the text :
-        String qoute ="Today's Quote: " +
-                "Quote: " + text +
-                "author: " + author ;
-        return qoute ;
+        String msg ="Today's Quote:{" +
+                "Quote: " + text + " author: " + author ;
+        return msg ;
     }
 }
