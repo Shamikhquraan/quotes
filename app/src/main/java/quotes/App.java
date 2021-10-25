@@ -15,7 +15,7 @@ public class App {
             Reader sampleReader = new FileReader("app/src/main/resources/data.json");
             //i made like qoutTamplet
             Quotes[] recentQuotes = gson.fromJson(sampleReader, Quotes[].class);
-            //random qoutes depend on the random number .
+            //random qoutes depend on the random number ...
             int index = (int)(Math.random()*recentQuotes.length);
             System.out.println(recentQuotes[index]);
         } catch (IOException ex) {
